@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Vazirmatn, sans-serif;
+  background: #080b16;
+  color: #edf2ff;
+}
+
+.container {
+  max-width: 1000px;
+  padding: 28px 16px 60px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #8ba4ff;
+}
+
+header p {
+  margin: 6px 0 0;
+  color: #aab4d2;
+}
+
+.card {
+  background: #12182b;
+  border: 1px solid #243154;
+  border-radius: 16px;
+  padding: 22px;
+  margin-bottom: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+}
+
+input, textarea {
+  width: 100%;
+  background: #0a1020;
+  border: 1px solid #2b3a63;
+  color: white;
+  border-radius: 10px;
+  padding: 12px;
+  font-family: inherit;
+  margin: 8px 0 14px;
+}
+
+textarea {
+  min-height: 115px;
+  resize: vertical;
+  direction: ltr;
+  text-align: left;
+}
+
+button {
+  border: 0;
+  padding: 11px 16px;
+  border-radius: 10px;
+  background: #597bff;
+  color: white;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+button:hover {
+  filter: brightness(1.1);
+}
+
+.secondary {
+  background: #293757;
+}
+
+.danger {
+  background: #d64a63;
+}
+
+.small {
+  padding: 7px 11px;
+  font-size: 12px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.label {
+  display: block;
+  color: #bbc6e8;
+  margin-top: 8px;
+}
+
+.section-title,
+.user-top,
+.copy-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.users-list {
+  display: grid;
+  gap: 12px;
+}
+
+.user-card {
+  padding: 16px;
+  background: #0c1325;
+  border: 1px solid #223054;
+  border-radius: 12px;
+}
+
+.user-card p {
+  color: #bbc6e8;
+  font-size: 14px;
+}
+
+.badge {
+  font-size: 12px;
+  margin-right: 8px;
+  padding: 3px 9px;
+  border-radius: 20px;
+}
+
+.active {
+  background: #124d36;
+  color: #7cffc0;
+}
+
+.inactive {
+  background: #5b2631;
+  color: #ff9fac;
+}
+
+.copy-row input {
+  margin: 0;
+  direction: ltr;
+  text-align: left;
+  font-size: 12px;
+}
+
+#toast {
+  position: fixed;
+  bottom: 22px;
+  left: 22px;
+  z-index: 10;
+  padding: 12px 16px;
+  border-radius: 10px;
+  display: none;
+}
+
+#toast.success,
+#toast.error {
+  display: block;
+}
+
+#toast.success {
+  background: #176b4a;
+}
+
+#toast.error {
+  background: #9d3143;
+}
+
+.error-text {
+  color: #ff9fac;
+}
+
+@media (max-width: 650px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .copy-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
